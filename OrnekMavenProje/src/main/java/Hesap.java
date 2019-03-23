@@ -12,4 +12,7 @@ public class Hesap {
 		}
 		return sonuc;
 	}
+	// cikarma
+	// carpma
+	// bolme
 }
