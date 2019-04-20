@@ -6,6 +6,13 @@ public class Hesap {
 	}
 
 	public int faktoriyel(int sayi) {
+		if(sayi < 0) {
+			throw new RuntimeException(
+					"Eksi sayilarin faktoriyeli yoktur");
+		}
+		else if(sayi == 0) {
+			return 1;
+		}
 		int sonuc = 1;
 		for(int i=1; i<=sayi; i++) {
 			sonuc *= i;

@@ -18,10 +18,17 @@ public class HesapTest {
 	}
 
 	@Test
-	public void testFaktoriyel() {
+	public void testFaktoriyelPozitif() {
 		Hesap h = new Hesap();
 		int sonuc = h.faktoriyel(10);
 		Assert.assertEquals(3628800, sonuc);
+	}
+	
+	@Test
+	public void testFaktoriyelSifir() {
+		Hesap h = new Hesap();
+		int sonuc = h.faktoriyel(0);
+		Assert.assertEquals(1, sonuc);
 	}
 	
 }
