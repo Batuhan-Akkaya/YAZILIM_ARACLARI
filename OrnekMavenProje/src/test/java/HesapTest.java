@@ -4,10 +4,17 @@ public class HesapTest {
 
 	// @org.junit.Test
 	@Test
-	public void testTopla() {
+	public void testPozitifTopla() {
 		Hesap h = new Hesap();
 		int sonuc = h.topla(345, 453);
 		Assert.assertEquals(798, sonuc);
+	}
+	
+	@Test
+	public void testNegatifTopla() {
+		Hesap h = new Hesap();
+		int sonuc = h.topla(-345, -453);
+		Assert.assertEquals(-798, sonuc);
 	}
 
 	@Test
